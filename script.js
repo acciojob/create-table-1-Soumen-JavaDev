@@ -1,5 +1,9 @@
 function insert_Row() {
-    //Write your code here
+	let ele=document.createElement("tr");
+	ele.innerHTML=`<td>New Cell1</td>
+			<td>New Cell2</td> `;
+	let topid=document.querySelector("#sampleTable");
+  topid.prepend(ele)
   
   
 }
