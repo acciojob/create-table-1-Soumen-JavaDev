@@ -3,7 +3,7 @@ function insert_Row() {
 	ele.innerHTML=`<td>New Cell1</td>
 			<td>New Cell2</td> `;
 	let topid=document.querySelector("#sampleTable");
-  topid.prepend(ele)
+ topid.insertAdjacentElement("afterbegin", ele);
   
   
 }
