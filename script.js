@@ -1,9 +1,14 @@
 function insert_Row() {
 	let ele=document.createElement("tr");
-	ele.innerHTML=`<td>New Cell1</td>
-			<td>New Cell2</td> `;
-	let topid=document.querySelector("#sampleTable");
- topid.insertAdjacentElement("afterbegin", ele);
+	let table=document.querySelector("#sampleTable");
+	let cell1=document.createElement("td");
+	let cell2=document.createElement("td");
+	cell1.innerHTML="New Cell1";
+	cell2.innerHTML="New Cell2";
+
+	ele.appendChild(cell1);
+	ele.appendChild(cell2);
+  table.insertBefore(ele, table.firstChild);
   
   
 }
